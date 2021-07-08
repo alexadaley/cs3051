@@ -1,0 +1,18 @@
+.row {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 300px) { /* For mobile phones: */
+.col-s-1 {width: 8.33%;}
+.col-s-4 {width: 33%;}
+.col-s-12 {width: 100%;}
+.one {order:1;}
+.two {order:2;}
+.three {order:3;}
+}
+@media only screen and (min-width: 300px) { /* For laptops and desktops: */
+.col-l-1 {width: 8.33%;}
+.col-l-4 {width: 33%;}
+.col-l-12 {width: 100%;}
+}

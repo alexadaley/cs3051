@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+<div id="app"> <p>
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Alexa's Cafe</span>
+<router-link to="/">Home</router-link>
+<router-link to="/menu">Menu</router-link>
+<router-link to="/contact">Contact</router-link> </p>
+  <router-view> </router-view>
+</nav>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/x-template" id="my-home">
+
+      </body>
+
+<body style="background-color:powderblue; fontfamliy:courier;">
+
+<h1>About Us!</h1>
+<p>Alexa spent her college years studying business in Paris. When graduating she decided to create a restaurant for the Parisian people to see what true American food is like. She has been in business since 2016 and is looking to expand to another district in Paris soon!</p>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl6JHgBAr1aNqEbt4tZw-rPHzn8x1cXztFAD1a8SBmKxkrDZWW" alt="Alexa Cooking
+" img>
+</body>
+    </script>
+
+ <script type="text/x-template" id="my-menu">
+<!---TRIAL RUN-->
+
+</script>
+
+<script type="text/x-template" id="my-contact">
+    <<body style="background-color:powderblue; fontfamliy:courier;">
+
+<h1>More Locations!</h1>
+<p>We are soon to expand into the Marais but meanwhile you can find us throughout Paris!</p>
+
+<h3 style="font-family:courier;"> Contact us: </h3>
+<ul style="font-family:courier;">
+<li>facebook.com/alexascafeparis</li>
+<li>instagram @alexascafe</li>
+<li>+33 11 22 33 44 </li>
+<li>alexascafe@gmail.com</li>
+</ul>
+<img src="https://www.nyhabitat.com/blog/wp-content/uploads/2013/06/street-marais-paris-france.jpg" alt="Alexa Cooking
+" img>
+</body>
+    </script>
+
+      <script>
+      const Home = { template: '#my-home' }
+      const Menu = { template: '#my-menu' }
+      const contact = {template: '#my-contact'}
+
+      const routes = [
+        { path: '/', component: Home },
+        { path: '/menu', component: Menu },
+        { path: '/contact', component: contact }
+      ]
+
+      const router = new VueRouter({
+        routes // short for `routes: routes`
+      })
+
+    const app = new Vue({
+      el: '#app', router
+    })
+    </script>
+  </body>
+</html>
